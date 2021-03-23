@@ -1,0 +1,82 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.46.0",
+  "hash": "65a4601307bc9d296fe6",
+  "publicPath": "/static/",
+  "outputPath": "E:\\Trabajo\\Frontend\\React\\Pruebas\\infoerrores\\infoerrores\\infoerrores\\build\\static",
+  "assetsByChunkName": {
+    "infoerrores": "infoerrores.module.js"
+  },
+  "assets": [
+    {
+      "name": "infoerrores.module.js",
+      "size": 6511930,
+      "chunks": [
+        "infoerrores"
+      ],
+      "chunkNames": [
+        "infoerrores"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "infoerrores": {
+      "chunks": [
+        "infoerrores"
+      ],
+      "assets": [
+        "infoerrores.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "infoerrores": {
+      "chunks": [
+        "infoerrores"
+      ],
+      "assets": [
+        "infoerrores.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": "infoerrores",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 1674110,
+      "names": [
+        "infoerrores"
+      ],
+      "files": [
+        "infoerrores.module.js"
+      ],
+      "hash": "2f75e8202a9aeea2801e",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    }
+  ],
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 2,
+      "debug": false
+    }
+  },
+  "children": [],
+  "generator": "loadable-components"
+}
