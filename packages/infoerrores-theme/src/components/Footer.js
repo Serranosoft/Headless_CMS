@@ -8,7 +8,7 @@ function Footer() {
                 <p>Política de Privacidad</p>
             </Link>
             <Link link="/">
-                <Img src="http://wp.infoerrores.com/wp-content/uploads/2021/03/infoerrores-web.png" alt="Image Alt" />
+                <Img src="https://wp.infoerrores.com/wp-content/uploads/2021/03/infoerrores-web.png" alt="Image Alt" />
             </Link>
             <Link link="/cookies">
                 <p>Política de Cookies</p>           
