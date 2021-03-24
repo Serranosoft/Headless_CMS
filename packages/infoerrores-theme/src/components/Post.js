@@ -14,7 +14,6 @@ function Post({ state, libraries }) {
                 <title>{post.title.rendered}</title>
                 <meta name="description" content={post.excerpt.rendered} />
             </Head>
-            <LastPosts />
             <PostWrapper>
 
                 <PostInfo>
