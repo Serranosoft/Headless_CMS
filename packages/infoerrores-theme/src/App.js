@@ -31,12 +31,12 @@ const Root = ({ state }) => {
                 <meta property="og:url" content="https://infoerrores.com" />
                 <meta property="og:type" content="website" />
 
-                <script
+{/*                 <script
                     async
                     data-ad-client="ca-pub-1811963161030250"
                     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
                 >
-                </script>
+                </script> */}
             </Head>
             <Global
                 styles={css`
