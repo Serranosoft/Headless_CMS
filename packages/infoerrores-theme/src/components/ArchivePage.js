@@ -61,7 +61,14 @@ const PostItem = styled.div`
         border-left: 2px solid lightgray;
         border-right: 2px solid lightgray;
         padding: 1px;
-    }`
+    }
+    
+    @media (max-width: 480px) {
+        img {
+            height: 200px;
+        }
+    }
+    `
 
 const PostInfo = styled.div`
     padding: 16px 8px 8px 8px;

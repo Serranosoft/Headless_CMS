@@ -2,16 +2,45 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "a73153848789e5c3031c",
+  "hash": "985b43ee0c7f3c197d0f",
   "publicPath": "/static/",
   "outputPath": "E:\\Trabajo\\Frontend\\React\\Pruebas\\infoerrores\\infoerrores\\infoerrores\\build\\static",
   "assetsByChunkName": {
-    "infoerrores": "infoerrores.module.js"
+    "infoerrores": [
+      "infoerrores.module.js",
+      "infoerrores.09c0143d36a25bf27bdc.hot-update.js"
+    ]
   },
   "assets": [
     {
+      "name": "09c0143d36a25bf27bdc.hot-update.json",
+      "size": 53,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "infoerrores.09c0143d36a25bf27bdc.hot-update.js",
+      "size": 30729,
+      "chunks": [
+        "infoerrores"
+      ],
+      "chunkNames": [
+        "infoerrores"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "infoerrores.module.js",
-      "size": 6511651,
+      "size": 6512861,
       "chunks": [
         "infoerrores"
       ],
@@ -29,7 +58,8 @@
         "infoerrores"
       ],
       "assets": [
-        "infoerrores.module.js"
+        "infoerrores.module.js",
+        "infoerrores.09c0143d36a25bf27bdc.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -41,7 +71,8 @@
         "infoerrores"
       ],
       "assets": [
-        "infoerrores.module.js"
+        "infoerrores.module.js",
+        "infoerrores.09c0143d36a25bf27bdc.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -53,14 +84,15 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1673983,
+      "size": 1674982,
       "names": [
         "infoerrores"
       ],
       "files": [
-        "infoerrores.module.js"
+        "infoerrores.module.js",
+        "infoerrores.09c0143d36a25bf27bdc.hot-update.js"
       ],
-      "hash": "5f245fa4eadd8a5f8123",
+      "hash": "6121119bff1ff23dcc6c",
       "siblings": [],
       "parents": [],
       "children": [],

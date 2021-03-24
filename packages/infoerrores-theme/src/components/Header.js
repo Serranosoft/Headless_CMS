@@ -52,6 +52,7 @@ const SvgParent = styled.svg`
 
 const Img = styled.img`
     width: 80px;
+    height: 80px;
     z-index: 9;
     margin-top: 24px;
 `

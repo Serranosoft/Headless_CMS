@@ -5,10 +5,10 @@ import Link from "@frontity/components/link"
 function HeroHome({ state, actions }) {
 
     useEffect(() => {
-        actions.source.fetch("/tag/top/");
+        actions.source.fetch("/tag/top/?per_page=3");
     }, []); // [] Sirve cuando el componente se ha montado del todo, entonces hace el fetch
 
-    const data = state.source.get("/tag/top/");
+    const data = state.source.get("/tag/top/?per_page=3");
 
     if (data.isTag) {
         const posts = data.items.map(({ type, id }) => state.source[type][id]);
@@ -94,6 +94,7 @@ const HeroWrapper = styled.div`
 
 const HeroItem = styled.div({
     height: "100%",
+    width: "100%",
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-end",
