@@ -17,7 +17,7 @@ const Root = ({ state }) => {
                     name="description"
                     content="Encuentra la solución a los errores mas comunes de Disney+, Netflix, streaming, videos, aplicaciones y juegos"
                 />
-
+                <meta name="google-site-verification" content="tbJ5sk6P8z9W6kea1e21xvu5ycQ8rpA2FSzkB_mdEys" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:description" content="Encuentra la solución a los errores mas comunes de Disney+, Netflix, streaming, videos, aplicaciones y juegos" />
                 <meta name="twitter:image" content="https://wp.infoerrores.com/wp-content/uploads/2021/03/infoerrores-web.png" />

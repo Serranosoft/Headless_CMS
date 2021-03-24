@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { connect, styled } from "frontity"
 import Link from "@frontity/components/link"
+import Loading from "./Loading";
 
 
 function LastPosts({ state, actions }) {
@@ -8,44 +9,49 @@ function LastPosts({ state, actions }) {
     useEffect(() => {
         actions.source.fetch("/tag/opt/");
     }, []);
-
     const data = state.source.get("/tag/opt/");
-    if (data.isTag) {
-        const posts = data.items.map(({ type, id }) => state.source[type][id]);
 
-        const media = state.source.attachment;
-        return (
-            <MainWrapper>
-                <LastPostWrapper>
-                    <Link link={posts[0].link} style={{ textDecoration: "none"}}>
-                        <LastPostItem>
-                            {posts[0].featured_media > 0 && <img src={media[posts[0].featured_media].source_url} />}
-                            <h2>{posts[0].title.rendered}</h2>
-                        </LastPostItem>
-                    </Link>
-                    <Link link={posts[1].link} style={{ textDecoration: "none"}}>
-                        <LastPostItem>
-                            {posts[1].featured_media > 0 && <img src={media[posts[1].featured_media].source_url} />}
-                            <h2>{posts[1].title.rendered}</h2>
-                        </LastPostItem>
-                    </Link>
-                    <Link link={posts[2].link} style={{ textDecoration: "none"}}>
-                        <LastPostItem>
-                            {posts[2].featured_media > 0 && <img src={media[posts[2].featured_media].source_url} />}
-                            <h2>{posts[2].title.rendered}</h2>
-                        </LastPostItem>
-                    </Link>
-                    <Link link={posts[3].link} style={{ textDecoration: "none"}}>
-                        <LastPostItem>
-                            {posts[3].featured_media > 0 && <img src={media[posts[3].featured_media].source_url} />}
-                            <h2>{posts[3].title.rendered}</h2>
-                        </LastPostItem>
-                    </Link>
-                </LastPostWrapper>
-    
-            </MainWrapper>
-        )
+    if (data.isReady) {
+        if (data.isTag) {
+            const posts = data.items.map(({ type, id }) => state.source[type][id]);
 
+            const media = state.source.attachment;
+            return (
+                <MainWrapper>
+                    <LastPostWrapper>
+                        <Link link={posts[0].link} style={{ textDecoration: "none" }}>
+                            <LastPostItem>
+                                {posts[0].featured_media > 0 && <img src={media[posts[0].featured_media].source_url} />}
+                                <h2>{posts[0].title.rendered}</h2>
+                            </LastPostItem>
+                        </Link>
+                        <Link link={posts[1].link} style={{ textDecoration: "none" }}>
+                            <LastPostItem>
+                                {posts[1].featured_media > 0 && <img src={media[posts[1].featured_media].source_url} />}
+                                <h2>{posts[1].title.rendered}</h2>
+                            </LastPostItem>
+                        </Link>
+                        <Link link={posts[2].link} style={{ textDecoration: "none" }}>
+                            <LastPostItem>
+                                {posts[2].featured_media > 0 && <img src={media[posts[2].featured_media].source_url} />}
+                                <h2>{posts[2].title.rendered}</h2>
+                            </LastPostItem>
+                        </Link>
+                        <Link link={posts[3].link} style={{ textDecoration: "none" }}>
+                            <LastPostItem>
+                                {posts[3].featured_media > 0 && <img src={media[posts[3].featured_media].source_url} />}
+                                <h2>{posts[3].title.rendered}</h2>
+                            </LastPostItem>
+                        </Link>
+                    </LastPostWrapper>
+
+                </MainWrapper>
+            )
+
+        }
+        
+    } else {
+        return <Loading />
     }
 
     return null
