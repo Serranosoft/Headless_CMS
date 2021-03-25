@@ -18,6 +18,10 @@ function Post({ state, libraries }) {
 
                 <PostInfo>
                     <h1>{post.title.rendered}</h1>
+                    <Adsense
+                        client="ca-pub-1811963161030250"
+                        slot="7706157488"
+                    />
                     {post.featured_media > 0 &&
                         <img
                             src={media[post.featured_media].source_url}

@@ -59,10 +59,6 @@ const Root = ({ state }) => {
                 }
             />
             <Header />
-            <Adsense
-                client="ca-pub-1811963161030250"
-                slot="7706157488"
-            />
             <Switch>
                 {/* <Loading when={data.isFetching} /> */}
                 <Home when={data.isHome} />
