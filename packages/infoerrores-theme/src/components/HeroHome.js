@@ -5,41 +5,42 @@ import Loading from "./Loading";
 
 function HeroHome({ state, actions }) {
 
-    useEffect(() => {
+/*     useEffect(() => {
         actions.source.fetch("/tag/top/?per_page=3");
     }, []); // [] Sirve cuando el componente se ha montado del todo, entonces hace el fetch
 
-    const data = state.source.get("/tag/top/?per_page=3");
+    const data = state.source.get("/tag/top/?per_page=3"); */
 
+    const data = state.source.get(state.router.link)
+    const media = state.source.attachment;
+    console.log(data);
     if (data.isReady) {
-        if (data.isTag) {
+/*         if (data.isTag) { */
             const posts = data.items.map(({ type, id }) => state.source[type][id]);
-
-            const media = state.source.attachment;
             return (
                 <MainWrapper>
                     <HeroWrapper>
-                        <Link link={posts[0].link} style={{ textDecoration: "none", gridArea: "hero2" }}>
-                            <HeroItem bgImg={media[posts[0].featured_media].source_url}>
-                                <h2 style={{ margin: "10px", fontSize: "16px", textAlign: "right" }}>{posts[0].title.rendered}</h2>
-                            </HeroItem>
-                        </Link>
-                        <Link link={posts[1].link} style={{ textDecoration: "none", gridArea: "hero3" }}>
+                        <Link link={posts[1].link} style={{ textDecoration: "none", gridArea: "hero2" }}>
                             <HeroItem bgImg={media[posts[1].featured_media].source_url}>
                                 <h2 style={{ margin: "10px", fontSize: "16px", textAlign: "right" }}>{posts[1].title.rendered}</h2>
                             </HeroItem>
                         </Link>
-
-                        <Link link={posts[2].link} style={{ textDecoration: "none", gridArea: "hero1" }}>
+                        <Link link={posts[2].link} style={{ textDecoration: "none", gridArea: "hero3" }}>
                             <HeroItem bgImg={media[posts[2].featured_media].source_url}>
-                                <h2 style={{ margin: "10px", fontSize: "28px", textAlign: "right" }}>{posts[2].title.rendered}</h2>
+                                <h2 style={{ margin: "10px", fontSize: "16px", textAlign: "right" }}>{posts[2].title.rendered}</h2>
+                            </HeroItem>
+                        </Link>
+
+                        <Link link={posts[0].link} style={{ textDecoration: "none", gridArea: "hero1" }}>
+                            <HeroItem bgImg={media[posts[0].featured_media].source_url}>
+                                <h2 style={{ margin: "10px", fontSize: "28px", textAlign: "right" }}>{posts[0].title.rendered}</h2>
                             </HeroItem>
                         </Link>
 
                     </HeroWrapper>
                 </MainWrapper>
             )
-        }
+/*         } */
     } else {
         return <Loading />
     }

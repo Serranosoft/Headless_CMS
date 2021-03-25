@@ -2,18 +2,18 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "42ca82101a21a759b9e5",
+  "hash": "d337fae57774a64b9f47",
   "publicPath": "/static/",
   "outputPath": "E:\\Trabajo\\Frontend\\React\\Pruebas\\infoerrores\\infoerrores\\infoerrores\\build\\static",
   "assetsByChunkName": {
     "infoerrores": [
       "infoerrores.module.js",
-      "infoerrores.ecdeee7872b9131e8c5d.hot-update.js"
+      "infoerrores.d864537dd2140695e357.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "ecdeee7872b9131e8c5d.hot-update.json",
+      "name": "d864537dd2140695e357.hot-update.json",
       "size": 53,
       "chunks": [],
       "chunkNames": [],
@@ -24,8 +24,8 @@
       "emitted": false
     },
     {
-      "name": "infoerrores.ecdeee7872b9131e8c5d.hot-update.js",
-      "size": 19278,
+      "name": "infoerrores.d864537dd2140695e357.hot-update.js",
+      "size": 19732,
       "chunks": [
         "infoerrores"
       ],
@@ -40,7 +40,7 @@
     },
     {
       "name": "infoerrores.module.js",
-      "size": 6591073,
+      "size": 6653987,
       "chunks": [
         "infoerrores"
       ],
@@ -59,7 +59,7 @@
       ],
       "assets": [
         "infoerrores.module.js",
-        "infoerrores.ecdeee7872b9131e8c5d.hot-update.js"
+        "infoerrores.d864537dd2140695e357.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -72,7 +72,7 @@
       ],
       "assets": [
         "infoerrores.module.js",
-        "infoerrores.ecdeee7872b9131e8c5d.hot-update.js"
+        "infoerrores.d864537dd2140695e357.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -84,15 +84,15 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1693579,
+      "size": 1704048,
       "names": [
         "infoerrores"
       ],
       "files": [
         "infoerrores.module.js",
-        "infoerrores.ecdeee7872b9131e8c5d.hot-update.js"
+        "infoerrores.d864537dd2140695e357.hot-update.js"
       ],
-      "hash": "1776bb76f260f2489190",
+      "hash": "a7bfedb149ea0ee9f662",
       "siblings": [],
       "parents": [],
       "children": [],
