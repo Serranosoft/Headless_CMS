@@ -19,6 +19,10 @@ function Home({ state, actions }) {
 
     return (
         <>
+            <Adsense
+                client="ca-pub-1811963161030250"
+                slot="7706157488"
+            />
             <HeroHome />
             <Adsense
                 client="ca-pub-1811963161030250"

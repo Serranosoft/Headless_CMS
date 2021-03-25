@@ -5,7 +5,6 @@ import Switch from "@frontity/components/switch"
 import Home from "./components/Home";
 import Post from "./components/Post"
 import Page from "./components/Page";
-import { Adsense } from '@ctrl/react-adsense';
 
 const Root = ({ state }) => {
     const data = state.source.get(state.router.link)
@@ -59,10 +58,6 @@ const Root = ({ state }) => {
                 }
             />
             <Header />
-            <Adsense
-                client="ca-pub-1811963161030250"
-                slot="7706157488"
-            />
             <Switch>
                 {/* <Loading when={data.isFetching} /> */}
                 <Home when={data.isHome} />
