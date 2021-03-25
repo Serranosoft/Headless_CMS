@@ -1,6 +1,7 @@
 import React from "react"
 import { connect, styled, Head } from "frontity"
-import LastPosts from "./LastPosts";
+import { Adsense } from '@ctrl/react-adsense';
+
 function Post({ state, libraries }) {
 
     const data = state.source.get(state.router.link)
