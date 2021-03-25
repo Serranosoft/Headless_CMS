@@ -15,7 +15,12 @@ function Post({ state, libraries }) {
                 <title>{post.title.rendered}</title>
                 <meta name="description" content={post.excerpt.rendered} />
             </Head>
+
             <PostWrapper>
+                <Adsense
+                    client="ca-pub-1811963161030250"
+                    slot="7706157488"
+                />
 
                 <PostInfo>
                     <h1>{post.title.rendered}</h1>

@@ -2,45 +2,43 @@ import React, { useEffect } from "react";
 import { connect, styled } from "frontity"
 import Link from "@frontity/components/link"
 import Loading from "./Loading";
+import { Adsense } from '@ctrl/react-adsense';
 
 function HeroHome({ state, actions }) {
 
-/*     useEffect(() => {
-        actions.source.fetch("/tag/top/?per_page=3");
-    }, []); // [] Sirve cuando el componente se ha montado del todo, entonces hace el fetch
-
-    const data = state.source.get("/tag/top/?per_page=3"); */
 
     const data = state.source.get(state.router.link)
     const media = state.source.attachment;
-    console.log(data);
     if (data.isReady) {
-/*         if (data.isTag) { */
-            const posts = data.items.map(({ type, id }) => state.source[type][id]);
-            return (
-                <MainWrapper>
-                    <HeroWrapper>
-                        <Link link={posts[1].link} style={{ textDecoration: "none", gridArea: "hero2" }}>
-                            <HeroItem bgImg={media[posts[1].featured_media].source_url}>
-                                <h2 style={{ margin: "10px", fontSize: "16px", textAlign: "right" }}>{posts[1].title.rendered}</h2>
-                            </HeroItem>
-                        </Link>
-                        <Link link={posts[2].link} style={{ textDecoration: "none", gridArea: "hero3" }}>
-                            <HeroItem bgImg={media[posts[2].featured_media].source_url}>
-                                <h2 style={{ margin: "10px", fontSize: "16px", textAlign: "right" }}>{posts[2].title.rendered}</h2>
-                            </HeroItem>
-                        </Link>
+        const posts = data.items.map(({ type, id }) => state.source[type][id]);
+        return (
+            <MainWrapper>
+                <Adsense
+                    client="ca-pub-1811963161030250"
+                    slot="7706157488"
+                />
+                <HeroWrapper>
+                    <Link link={posts[1].link} style={{ textDecoration: "none", gridArea: "hero2" }}>
+                        <HeroItem bgImg={media[posts[1].featured_media].source_url}>
+                            <h2 style={{ margin: "10px", fontSize: "16px", textAlign: "right" }}>{posts[1].title.rendered}</h2>
+                        </HeroItem>
+                    </Link>
+                    <Link link={posts[2].link} style={{ textDecoration: "none", gridArea: "hero3" }}>
+                        <HeroItem bgImg={media[posts[2].featured_media].source_url}>
+                            <h2 style={{ margin: "10px", fontSize: "16px", textAlign: "right" }}>{posts[2].title.rendered}</h2>
+                        </HeroItem>
+                    </Link>
 
-                        <Link link={posts[0].link} style={{ textDecoration: "none", gridArea: "hero1" }}>
-                            <HeroItem bgImg={media[posts[0].featured_media].source_url}>
-                                <h2 style={{ margin: "10px", fontSize: "28px", textAlign: "right" }}>{posts[0].title.rendered}</h2>
-                            </HeroItem>
-                        </Link>
+                    <Link link={posts[0].link} style={{ textDecoration: "none", gridArea: "hero1" }}>
+                        <HeroItem bgImg={media[posts[0].featured_media].source_url}>
+                            <h2 style={{ margin: "10px", fontSize: "28px", textAlign: "right" }}>{posts[0].title.rendered}</h2>
+                        </HeroItem>
+                    </Link>
 
-                    </HeroWrapper>
-                </MainWrapper>
-            )
-/*         } */
+                </HeroWrapper>
+            </MainWrapper>
+        )
+        /*         } */
     } else {
         return <Loading />
     }

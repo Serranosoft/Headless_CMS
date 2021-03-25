@@ -59,7 +59,6 @@ const Root = ({ state }) => {
             />
             <Header />
             <Switch>
-                {/* <Loading when={data.isFetching} /> */}
                 <Home when={data.isHome} />
                 <Post when={data.isPost} />
                 <Page when={data.isPage} />
