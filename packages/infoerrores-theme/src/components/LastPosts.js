@@ -37,12 +37,6 @@ function LastPosts({ state, actions }) {
                                 <h2>{posts[2].title.rendered}</h2>
                             </LastPostItem>
                         </Link>
-{/*                         <Link link={posts[3].link} style={{ textDecoration: "none" }}>
-                            <LastPostItem>
-                                {posts[3].featured_media > 0 && <img src={media[posts[3].featured_media].source_url} />}
-                                <h2>{posts[3].title.rendered}</h2>
-                            </LastPostItem>
-                        </Link> */}
                     </LastPostWrapper>
 
                 </MainWrapper>

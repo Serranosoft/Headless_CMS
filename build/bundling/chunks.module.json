@@ -2,45 +2,16 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "71bbbbf93cea55f6f1e5",
+  "hash": "07eb5a6e23adf0d8d58c",
   "publicPath": "/static/",
   "outputPath": "E:\\Trabajo\\Frontend\\React\\Pruebas\\infoerrores\\infoerrores\\infoerrores\\build\\static",
   "assetsByChunkName": {
-    "infoerrores": [
-      "infoerrores.module.js",
-      "infoerrores.48aaf9cb7b22c67591cb.hot-update.js"
-    ]
+    "infoerrores": "infoerrores.module.js"
   },
   "assets": [
     {
-      "name": "48aaf9cb7b22c67591cb.hot-update.json",
-      "size": 53,
-      "chunks": [],
-      "chunkNames": [],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
-      "name": "infoerrores.48aaf9cb7b22c67591cb.hot-update.js",
-      "size": 20895,
-      "chunks": [
-        "infoerrores"
-      ],
-      "chunkNames": [
-        "infoerrores"
-      ],
-      "info": {
-        "hotModuleReplacement": true,
-        "immutable": true
-      },
-      "emitted": false
-    },
-    {
       "name": "infoerrores.module.js",
-      "size": 6656320,
+      "size": 6615833,
       "chunks": [
         "infoerrores"
       ],
@@ -58,8 +29,7 @@
         "infoerrores"
       ],
       "assets": [
-        "infoerrores.module.js",
-        "infoerrores.48aaf9cb7b22c67591cb.hot-update.js"
+        "infoerrores.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -71,8 +41,7 @@
         "infoerrores"
       ],
       "assets": [
-        "infoerrores.module.js",
-        "infoerrores.48aaf9cb7b22c67591cb.hot-update.js"
+        "infoerrores.module.js"
       ],
       "children": {},
       "childAssets": {}
@@ -84,15 +53,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1704840,
+      "size": 1697195,
       "names": [
         "infoerrores"
       ],
       "files": [
-        "infoerrores.module.js",
-        "infoerrores.48aaf9cb7b22c67591cb.hot-update.js"
+        "infoerrores.module.js"
       ],
-      "hash": "a6a061fdc5d82736f547",
+      "hash": "fabc9bf2be31735e37ac",
       "siblings": [],
       "parents": [],
       "children": [],

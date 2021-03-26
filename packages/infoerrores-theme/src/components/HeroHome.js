@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { connect, styled } from "frontity"
 import Link from "@frontity/components/link"
 import Loading from "./Loading";
-import { Adsense } from '@ctrl/react-adsense';
+import AdSense from 'react-adsense';
 
 function HeroHome({ state, actions }) {
 
@@ -13,9 +13,9 @@ function HeroHome({ state, actions }) {
         const posts = data.items.map(({ type, id }) => state.source[type][id]);
         return (
             <MainWrapper>
-                <Adsense
-                    client="ca-pub-1811963161030250"
-                    slot="7706157488"
+                <AdSense.Google
+                    client='ca-pub-7292810486004926'
+                    slot='7806394673'
                 />
                 <HeroWrapper>
                     <Link link={posts[1].link} style={{ textDecoration: "none", gridArea: "hero2" }}>
@@ -38,7 +38,6 @@ function HeroHome({ state, actions }) {
                 </HeroWrapper>
             </MainWrapper>
         )
-        /*         } */
     } else {
         return <Loading />
     }
@@ -46,6 +45,7 @@ function HeroHome({ state, actions }) {
 
 
 const MainWrapper = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

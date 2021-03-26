@@ -1,6 +1,5 @@
 import React from "react"
 import { connect, styled, Head } from "frontity"
-import { Adsense } from '@ctrl/react-adsense';
 
 function Post({ state, libraries }) {
 
@@ -17,10 +16,10 @@ function Post({ state, libraries }) {
             </Head>
 
             <PostWrapper>
-                <Adsense
+{/*                 <Adsense
                     client="ca-pub-1811963161030250"
                     slot="7706157488"
-                />
+                /> */}
 
                 <PostInfo>
                     <h1>{post.title.rendered}</h1>
@@ -28,10 +27,10 @@ function Post({ state, libraries }) {
                         <img
                             src={media[post.featured_media].source_url}
                             style={{ maxHeight: "350px" }} />}
-                    <Adsense
+{/*                     <Adsense
                         client="ca-pub-1811963161030250"
                         slot="7706157488"
-                    />
+                    /> */}
                     <Html2React html={post.content.rendered} />
                 </PostInfo>
             </PostWrapper>
