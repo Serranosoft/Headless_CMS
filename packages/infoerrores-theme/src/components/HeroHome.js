@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { connect, styled } from "frontity"
 import Link from "@frontity/components/link"
 import Loading from "./Loading";
-import AdSense from 'react-adsense';
 
 function HeroHome({ state, actions }) {
 

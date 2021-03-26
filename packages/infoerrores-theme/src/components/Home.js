@@ -5,6 +5,7 @@ import { useArchiveInfiniteScroll } from "@frontity/hooks";
 import Loading from "./Loading";
 import ArchivePage from "./ArchivePage";
 import LastPosts from "./LastPosts";
+import AdSense from 'react-adsense';
 
 function Home({ state, actions }) {
     const {
