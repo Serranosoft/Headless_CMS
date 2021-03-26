@@ -29,8 +29,9 @@ const Root = ({ state }) => {
                 <meta property="og:image:height" content="550" />
                 <meta property="og:url" content="https://infoerrores.com" />
                 <meta property="og:type" content="website" />
-{/*                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
- */}                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                {/*                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+ */}                {/* <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> */}
+                <script data-ad-client="ca-pub-1811963161030250" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             </Head>
             <Global
                 styles={css`
