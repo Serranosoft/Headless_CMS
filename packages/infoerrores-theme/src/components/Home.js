@@ -20,9 +20,9 @@ function Home({ state, actions }) {
         <>
             <HeroHome />
             <AdSense.Google
-                    client='ca-pub-1811963161030250'
-                    slot='7706157488'
-                />
+                client='ca-pub-1811963161030250'
+                slot='7706157488'
+            />
             {/* <h3 style={{textAlign: "center", fontSize: "34px"}}>Lo mas interesante</h3> */}
             <LastPosts />
             <>
@@ -30,10 +30,10 @@ function Home({ state, actions }) {
 
                     <Wrapper key={key}>
                         <ArchivePage link={link} />
-                        {/* <Adsense
-                            client="ca-pub-1811963161030250"
-                            slot="7706157488"
-                        /> */}
+                        <AdSense.Google
+                            client='ca-pub-1811963161030250'
+                            slot='7706157488'
+                        />
                         {!isLast}
                     </Wrapper>
                 ))}

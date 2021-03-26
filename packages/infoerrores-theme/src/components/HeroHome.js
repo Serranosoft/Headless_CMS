@@ -5,9 +5,9 @@ import Loading from "./Loading";
 
 function HeroHome({ state, actions }) {
 
-
     const data = state.source.get(state.router.link)
     const media = state.source.attachment;
+    
     if (data.isReady) {
         const posts = data.items.map(({ type, id }) => state.source[type][id]);
         return (
