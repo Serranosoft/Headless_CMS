@@ -13,10 +13,6 @@ function HeroHome({ state, actions }) {
         const posts = data.items.map(({ type, id }) => state.source[type][id]);
         return (
             <MainWrapper>
-                <AdSense.Google
-                    client='ca-pub-7292810486004926'
-                    slot='7806394673'
-                />
                 <HeroWrapper>
                     <Link link={posts[1].link} style={{ textDecoration: "none", gridArea: "hero2" }}>
                         <HeroItem bgImg={media[posts[1].featured_media].source_url}>
