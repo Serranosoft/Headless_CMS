@@ -17,10 +17,10 @@ function Post({ state, libraries }) {
             </Head>
 
             <PostWrapper>
-                <AdSense.Google
+                {/* <AdSense.Google
                     client='ca-pub-1811963161030250'
                     slot='7706157488'
-                />
+                /> */}
 
                 <PostInfo>
                     <h1>{post.title.rendered}</h1>
@@ -28,10 +28,10 @@ function Post({ state, libraries }) {
                         <img
                             src={media[post.featured_media].source_url}
                             style={{ maxHeight: "350px" }} />}
-                    <AdSense.Google
+                    {/* <AdSense.Google
                         client='ca-pub-1811963161030250'
                         slot='7706157488'
-                    />
+                    /> */}
                     <Html2React html={post.content.rendered} />
                 </PostInfo>
             </PostWrapper>

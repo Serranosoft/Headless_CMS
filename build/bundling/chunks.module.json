@@ -2,7 +2,7 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "bc1c86366245154d6903",
+  "hash": "dfd18f5e212f31f66a33",
   "publicPath": "/static/",
   "outputPath": "E:\\Trabajo\\Frontend\\React\\Pruebas\\infoerrores\\infoerrores\\infoerrores\\build\\static",
   "assetsByChunkName": {
@@ -11,7 +11,7 @@
   "assets": [
     {
       "name": "infoerrores.module.js",
-      "size": 6616169,
+      "size": 6615652,
       "chunks": [
         "infoerrores"
       ],
@@ -53,14 +53,14 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1696764,
+      "size": 1696653,
       "names": [
         "infoerrores"
       ],
       "files": [
         "infoerrores.module.js"
       ],
-      "hash": "07dcb94651de0c9b459f",
+      "hash": "da1906efdd44c00b379b",
       "siblings": [],
       "parents": [],
       "children": [],
